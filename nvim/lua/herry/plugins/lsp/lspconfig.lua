@@ -70,6 +70,36 @@ typescript.setup({
   },
 })
 
+-- configure python server
+lspconfig["pyright"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure tflint server
+lspconfig["tflint"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure terraform server
+lspconfig["terraformls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure golang server
+lspconfig["gopls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure yaml server
+lspconfig["yamlls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 -- configure css server
 lspconfig["cssls"].setup({
   capabilities = capabilities,

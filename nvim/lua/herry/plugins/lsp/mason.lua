@@ -36,9 +36,16 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
   -- list of formatters & linters for mason to install
   ensure_installed = {
+    "eslint_d", -- ts/js linter
+    "pylint", -- python linter
+    "tflint", -- terraform linter
+    "yamllint", -- yaml linter
+    "shellcheck", -- shell linter
+    "shfmt", -- shell formatter
+    "black", -- python formatter
+    "yamlfmt", -- yaml formatter
     "prettier", -- ts/js formatter
     "stylua", -- lua formatter
-    "eslint_d", -- ts/js linter,
   },
   -- auto-install configured formatters & linters (with null-ls)
   automatic_installation = true,
