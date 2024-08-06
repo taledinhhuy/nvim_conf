@@ -1,6 +1,10 @@
-local bufferline_setup, bufferline = pcall(require, "bufferline")
-if not bufferline_setup then
-  return
-end
-
-bufferline.setup()
+return {
+  "akinsho/bufferline.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
+  version = "*",
+  opts = {
+    options = {
+      mode = "bufferline",
+    },
+  },
+}

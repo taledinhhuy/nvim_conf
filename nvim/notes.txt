@@ -1,9 +1,0 @@
-To use system clipboard:
-sudo apt install xl-clipboard
-sudo apt install xclip
-
-
-To use grep search install 
-brew install ripgrep
-
-
