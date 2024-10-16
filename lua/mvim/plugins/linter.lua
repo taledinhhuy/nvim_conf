@@ -9,6 +9,7 @@ return {
         typescript = { "eslint_d" },
         javascript = { "eslint_d" },
         vue = { "eslint_d", "stylelint" },
+        terraform = { "tflint" },
       },
       linters = {
         eslint_d = {

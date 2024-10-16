@@ -97,6 +97,8 @@ local M = {
           },
         },
         pyright = {},
+        terraformls = {},
+        bashls = {},
         lua_ls = {
           settings = {
             Lua = {
