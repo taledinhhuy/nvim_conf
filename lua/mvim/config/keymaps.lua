@@ -6,7 +6,7 @@ keymap("n", "<leader>W", "<Cmd>wa<CR>", { desc = "Save files" })
 
 -- Deleting words into black hole registry
 keymap("n", "x", '"_x')
-keymap("n", "X", '"_dw')
+keymap("n", "X", '"_d$')
 
 -- Editing: quit
 keymap("n", "<leader>q", "<Cmd>q<CR>", { desc = "Quit" })
