@@ -4,6 +4,10 @@ local keymap = vim.keymap.set
 keymap("n", "<leader>w", "<Cmd>w<CR>", { desc = "Save file" })
 keymap("n", "<leader>W", "<Cmd>wa<CR>", { desc = "Save files" })
 
+-- Deleting words into black hole registry
+keymap("n", "x", '"_x')
+keymap("n", "X", '"_dw')
+
 -- Editing: quit
 keymap("n", "<leader>q", "<Cmd>q<CR>", { desc = "Quit" })
 keymap("n", "<leader>Q", "<Cmd>q!<CR>", { desc = "Force quit" })
